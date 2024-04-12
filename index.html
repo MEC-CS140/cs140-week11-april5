@@ -9,10 +9,16 @@
 <body>
     <header>
         <h1>Hello, CS 140 Creators!🎨</h1>
+        <input type="text" id="mytextbox">
+        <input type="checkbox" id="mycheckbox">
+        
+        <button onclick="getText()">Get textbox info</button>
+        <button onclick="getCheck()">Get checkbox info</button>
+
     </header>
     <main>
         <section>
-            <p>This is your canvas, and with HTML, CSS, and JavaScript, you're going to create something amazing. Ready, set, code! ✨</p>
+            <p id="existingText">This is your canvas, and with HTML, CSS, and JavaScript, you're going to create something amazing. Ready, set, code! ✨</p>
         </section>
         <section>
             <button id="funButton">Click Me for Fun!</button>
@@ -21,10 +27,20 @@
 
         <button onclick="alert('Button has been clicked!')">Basic Button</button>
         <button onclick="areaOfSquareSizeTwenty()">Button with Function in script.js (calculate area)</button>
+        
+        <br>
         <button onclick="areaOfSquareSizeNegativeTwenty()">Calculate Negative Area</button>
+        
+        <br>
+        <button onclick="changeFooter()">Change the footer</button>
+        <br>
+        <br>
+        Count Clicks: <p id="clicksText"></p>
+        <button onclick="clickEvent()">Click Counter</button>
+
     </main>
     <footer>
-        <p>Happy Coding! 🚀</p>
+        <p id="footerParagraph">Happy Coding! 🚀</p>
     </footer>
     <script src="script.js"></script>
 </body>
